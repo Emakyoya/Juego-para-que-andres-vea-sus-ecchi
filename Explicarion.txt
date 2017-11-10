@@ -1,0 +1,26 @@
+Lo realizado 
+
+Cambie el script GeneratorManager para que tuviera todas las variables necesarias y los metodos poniendo primero la clase CreatePrefab virtual 
+para asi poder desde ese mismo metodo llamado en los hijos sobreescribir el metodo del GeneratorManager, funciono pero para el juego requeria que
+los generadores de enemigos y puntos no se inicializaran desde el start al mismo timepo sin tener control de cuales salien primero o no asi que volvi el
+metodo que hace el invoke virtual para sobreescribir en los generadores cada uno y especificar como queria que se comportar. 
+
+todos los generadores ahora sobre escriben de su padre incluyendo el generador de punto.
+
+clases modificadas
+
+-GeneratorManager
+-EnemyGeneratorComp
+-EnemyGeneratorEst
+-EnemyGeneratorRed
+-Pointgenerator01
+
+
+porque se dificulto en clase
+
+entendia muy bien el concepto despues de ver el ejemplo que busque en la clase del perro pero no le habia entendido al profesor y me habia confundido de 
+si el master debia llevar o no de si los hijos podian hacerlo de una u otra manera, en general pienso que trato de programar a lo que me salga y no pensando en 
+lo necesario para la implementacion, logre 2 formas que funcionara pero ninguna era acorde a lo que se pedia. entiendo claramente la facilidad que coge el codigo utilizando 
+el polimorfismo ya que son menos lineas y todo se siente como conectado entre si (padres e hijos) pero tratando de buscar la solucion obvia me enrrede y no fui capaz de 
+resolver el problema de forma optima. 
+El problema mas que todo era que le entendi mal al profesor y me enrrede mucho en organizar las ideas y en entender como tomar el problema  
